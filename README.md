@@ -18,7 +18,7 @@ Saya Nazarul Bagus Riyadi, mahasiswa PJJ Informatika angkatan 2024. Repository i
 
 Tujuan belajar Data Science bagi saya adalah memahami alur kerja seorang data practitioner — mulai dari eksplorasi data, pembersihan, analisis statistik, visualisasi, persiapan data untuk machine learning, hingga membangun model prediksi sederhana. Setiap notebook merekam proses berpikir, kode, output, dan refleksi pembelajaran.
 
-Di dalam repository ini terdapat 7 notebook hands-on yang mencakup: pengenalan Python untuk data science, manipulasi data dengan Pandas & NumPy, data cleaning, statistika deskriptif, visualisasi, preprocessing ML, dan regresi linear. Semua dataset yang dibutuhkan dimuat langsung dari library (Seaborn) atau URL publik di dalam notebook.
+Di dalam repository ini terdapat 7 notebook hands-on yang mencakup: pengenalan Python untuk data science, manipulasi data dengan Pandas & NumPy, data cleaning, statistika deskriptif, visualisasi, preprocessing ML, dan regresi linear. Dataset pendukung (misalnya `housing_dirty.csv` untuk Pertemuan 3) tersedia di repository terpisah: [data-science-source](https://github.com/arulriyadi/data-science-source).
 
 ---
 
@@ -33,6 +33,16 @@ Di dalam repository ini terdapat 7 notebook hands-on yang mencakup: pengenalan P
 | 5 | Pertemuan 5 | Visualisasi Data | [Buka Notebook](Pertemuan5_NazarulBagusRiyadi_240401010229.ipynb) |
 | 6 | Pertemuan 6 | Persiapan Data (Preprocessing ML) | [Buka Notebook](Pertemuan6_NazarulBagusRiyadi_240401010229.ipynb) |
 | 7 | Pertemuan 7 | Pengantar Machine Learning: Regresi Linear | [Buka Notebook](Pertemuan7_NazarulBagusRiyadi_240401010229.ipynb) |
+
+---
+
+## Dataset & Sumber Data
+
+| Sumber | Digunakan di | Link |
+|--------|--------------|------|
+| Dataset housing (data kotor) | Pertemuan 3 | [data-science-source](https://github.com/arulriyadi/data-science-source) |
+| Titanic, Iris, Tips | P2, P4, P5, P6 | Seaborn / URL publik (di dalam notebook) |
+| Dataset sintetis gaji | Pertemuan 7 | Digenerate di notebook |
 
 ---
 
