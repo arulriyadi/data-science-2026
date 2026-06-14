@@ -87,4 +87,4 @@ Sepanjang 7 pertemuan, saya mempelajari alur kerja Data Science secara bertahap:
 
 ---
 
-*Praktikum Pengantar Data Science — Semester 4, 2026*
+*Praktikum Data Science — Semester 4, 2026*
