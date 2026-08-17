@@ -14,11 +14,11 @@
 
 ## Perkenalan
 
-Saya Nazarul Bagus Riyadi, mahasiswa PJJ Informatika angkatan 2024. Repository ini merupakan portofolio hasil praktikum **Pengantar Data Science** (kode: 200302305) yang mendokumentasikan perjalanan belajar saya dari Pertemuan 1 hingga Pertemuan 12.
+Saya Nazarul Bagus Riyadi, mahasiswa PJJ Informatika angkatan 2024. Repository ini merupakan portofolio hasil praktikum **Pengantar Data Science** (kode: 200302305) yang mendokumentasikan perjalanan belajar saya dari Pertemuan 1 hingga Pertemuan 13.
 
-Tujuan belajar Data Science bagi saya adalah memahami alur kerja seorang data practitioner — mulai dari eksplorasi data, pembersihan, analisis statistik, visualisasi, persiapan data untuk machine learning, hingga membangun model prediksi (regresi dan klasifikasi), segmentasi tanpa label, dan rekomendasi. Setiap notebook merekam proses berpikir, kode, output, dan refleksi pembelajaran.
+Tujuan belajar Data Science bagi saya adalah memahami alur kerja seorang data practitioner — mulai dari eksplorasi data, pembersihan, analisis statistik, visualisasi, persiapan data untuk machine learning, hingga membangun model prediksi (regresi dan klasifikasi), segmentasi tanpa label, rekomendasi, serta dasar deep learning dan NLP. Setiap notebook merekam proses berpikir, kode, output, dan refleksi pembelajaran.
 
-Di dalam repository ini terdapat 11 notebook hands-on yang mencakup: pengenalan Python untuk data science, manipulasi data dengan Pandas & NumPy, data cleaning, statistika deskriptif, visualisasi, preprocessing ML, regresi linear, klasifikasi, ensemble dan data imbalanced, clustering, serta asosiasi data dan sistem rekomendasi. Dataset pendukung (misalnya `housing_dirty.csv` untuk Pertemuan 3) tersedia di repository terpisah: [data-science-source](https://github.com/arulriyadi/data-science-source).
+Di dalam repository ini terdapat 12 notebook hands-on yang mencakup: pengenalan Python untuk data science, manipulasi data dengan Pandas & NumPy, data cleaning, statistika deskriptif, visualisasi, preprocessing ML, regresi linear, klasifikasi, ensemble dan data imbalanced, clustering, asosiasi data dan sistem rekomendasi, serta pengantar deep learning dan analisis sentimen. Dataset pendukung (misalnya `housing_dirty.csv` untuk Pertemuan 3) tersedia di repository terpisah: [data-science-source](https://github.com/arulriyadi/data-science-source).
 
 ---
 
@@ -37,6 +37,7 @@ Di dalam repository ini terdapat 11 notebook hands-on yang mencakup: pengenalan 
 | 9 | Pertemuan 10 | Algoritma Klasifikasi (Bagian 2): Random Forest, Imbalanced Dataset, Customer Churn | [Buka Notebook](Pertemuan10_NazarulBagusRiyadi_240401010229.ipynb) |
 | 10 | Pertemuan 11 | Unsupervised Learning (Clustering): K-Means, Hierarchical Clustering, Metode Elbow | [Buka Notebook](Pertemuan11_NazarulBagusRiyadi_240401010229.ipynb) |
 | 11 | Pertemuan 12 | Asosiasi Data & Sistem Rekomendasi Dasar: Apriori (Market Basket) dan Content-Based Filtering | [Buka Notebook](Pertemuan12_NazarulBagusRiyadi_240401010229.ipynb) |
+| 12 | Pertemuan 13 | Pengantar Deep Learning & NLP Dasar: Neural Network, TF-IDF, Analisis Sentimen | [Buka Notebook](Pertemuan13_NazarulBagusRiyadi_240401010229.ipynb) |
 
 ---
 
@@ -51,6 +52,7 @@ Di dalam repository ini terdapat 11 notebook hands-on yang mencakup: pengenalan 
 | Telco Customer Churn | Pertemuan 10 | URL publik IBM (di dalam notebook) |
 | Dataset sintetis pelanggan | Pertemuan 11 | Digenerate di notebook |
 | Transaksi & katalog produk sintetis | Pertemuan 12 | Digenerate di notebook |
+| make_moons & ulasan produk sintetis | Pertemuan 13 | `sklearn.datasets.make_moons` + teks di notebook |
 
 ---
 
@@ -62,6 +64,7 @@ Di dalam repository ini terdapat 11 notebook hands-on yang mencakup: pengenalan 
 | Manipulasi Data | Pandas, NumPy |
 | Visualisasi | Matplotlib, Seaborn |
 | Machine Learning | Scikit-learn, mlxtend |
+| Deep Learning | TensorFlow / Keras |
 | Statistik | SciPy |
 | Lingkungan | Google Colab, Jupyter Notebook |
 | Version Control | Git & GitHub |
@@ -82,13 +85,13 @@ Di dalam repository ini terdapat 11 notebook hands-on yang mencakup: pengenalan 
 ```bash
 git clone https://github.com/arulriyadi/data-science-2026.git
 cd data-science-2026
-pip install pandas numpy matplotlib seaborn scikit-learn scipy requests jupyter mlxtend
+pip install pandas numpy matplotlib seaborn scikit-learn scipy requests jupyter mlxtend tensorflow
 jupyter notebook
 ```
 
 ---
 
-## Kesimpulan Perjalanan Belajar (Pertemuan 1–12)
+## Kesimpulan Perjalanan Belajar (Pertemuan 1–13)
 
 Sepanjang pertemuan ini, saya mempelajari alur kerja Data Science secara bertahap:
 
@@ -102,10 +105,11 @@ Sepanjang pertemuan ini, saya mempelajari alur kerja Data Science secara bertaha
 8. **Pertemuan 10** — Random Forest pada Telco Customer Churn (26.5% churn). Accuracy paradox: di threshold 0.5 kedua model ~0.79 Accuracy, tetapi Recall churn baru naik ke 0.671 setelah threshold diturunkan ke 0.35.
 9. **Pertemuan 11** — Segmentasi pelanggan dengan K-Means. Elbow dan Silhouette sama-sama memilih K = 3 (silhouette 0.695): Hemat, Menengah, dan Boros/Premium. Dendrogram Ward konsisten dengan hasil itu.
 10. **Pertemuan 12** — Market Basket Analysis (Apriori) dan content-based filtering. Aturan Roti → Selai: support 0.22, confidence 0.688, lift 1.322. Kedua pendekatan sepakat merekomendasikan Selai untuk Roti.
+11. **Pertemuan 13** — Neural network sederhana pada data non-linear `make_moons` (akurasi uji 0.900) dan analisis sentimen TF-IDF + Logistic Regression pada 40 ulasan produk.
 
-**Temuan utama:** Data Science bukan sekadar menjalankan kode — setiap tahap (eksplorasi → cleaning → analisis → visualisasi → modeling) saling terkait dan urutannya penting. Metrik evaluasi harus dipilih sesuai konteks: Recall untuk diagnosis/churn, Elbow + Silhouette untuk clustering, Lift untuk aturan asosiasi.
+**Temuan utama:** Data Science bukan sekadar menjalankan kode — setiap tahap (eksplorasi → cleaning → analisis → visualisasi → modeling) saling terkait dan urutannya penting. Metrik evaluasi harus dipilih sesuai konteks: Recall untuk diagnosis/churn, Elbow + Silhouette untuk clustering, Lift untuk aturan asosiasi, dan kurva belajar untuk neural network.
 
-**Keterbatasan & langkah selanjutnya:** Dataset masih contoh/sintetis. Pertemuan 13 akan menambah dasar deep learning dan NLP (TF-IDF, analisis sentimen).
+**Keterbatasan:** Portofolio ini masih berbasis dataset contoh dan model pengantar. Dataset teks Pertemuan 13 kecil, sehingga akurasi test set sentimen rapuh. Langkah selanjutnya yang masuk akal: data riil, feature engineering lebih dalam, dan model yang lebih kuat jika datanya mendukung.
 
 ---
 
