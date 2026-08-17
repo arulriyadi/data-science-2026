@@ -14,11 +14,11 @@
 
 ## Perkenalan
 
-Saya Nazarul Bagus Riyadi, mahasiswa PJJ Informatika angkatan 2024. Repository ini merupakan portofolio hasil praktikum **Pengantar Data Science** (kode: 200302305) yang mendokumentasikan perjalanan belajar saya dari Pertemuan 1 hingga Pertemuan 7.
+Saya Nazarul Bagus Riyadi, mahasiswa PJJ Informatika angkatan 2024. Repository ini merupakan portofolio hasil praktikum **Pengantar Data Science** (kode: 200302305) yang mendokumentasikan perjalanan belajar saya dari Pertemuan 1 hingga Pertemuan 9.
 
-Tujuan belajar Data Science bagi saya adalah memahami alur kerja seorang data practitioner — mulai dari eksplorasi data, pembersihan, analisis statistik, visualisasi, persiapan data untuk machine learning, hingga membangun model prediksi sederhana. Setiap notebook merekam proses berpikir, kode, output, dan refleksi pembelajaran.
+Tujuan belajar Data Science bagi saya adalah memahami alur kerja seorang data practitioner — mulai dari eksplorasi data, pembersihan, analisis statistik, visualisasi, persiapan data untuk machine learning, hingga membangun model prediksi (regresi dan klasifikasi). Setiap notebook merekam proses berpikir, kode, output, dan refleksi pembelajaran.
 
-Di dalam repository ini terdapat 7 notebook hands-on yang mencakup: pengenalan Python untuk data science, manipulasi data dengan Pandas & NumPy, data cleaning, statistika deskriptif, visualisasi, preprocessing ML, dan regresi linear. Dataset pendukung (misalnya `housing_dirty.csv` untuk Pertemuan 3) tersedia di repository terpisah: [data-science-source](https://github.com/arulriyadi/data-science-source).
+Di dalam repository ini terdapat 8 notebook hands-on yang mencakup: pengenalan Python untuk data science, manipulasi data dengan Pandas & NumPy, data cleaning, statistika deskriptif, visualisasi, preprocessing ML, regresi linear, dan klasifikasi. Dataset pendukung (misalnya `housing_dirty.csv` untuk Pertemuan 3) tersedia di repository terpisah: [data-science-source](https://github.com/arulriyadi/data-science-source).
 
 ---
 
@@ -33,6 +33,7 @@ Di dalam repository ini terdapat 7 notebook hands-on yang mencakup: pengenalan P
 | 5 | Pertemuan 5 | Visualisasi Data | [Buka Notebook](Pertemuan5_NazarulBagusRiyadi_240401010229.ipynb) |
 | 6 | Pertemuan 6 | Persiapan Data (Preprocessing ML) | [Buka Notebook](Pertemuan6_NazarulBagusRiyadi_240401010229.ipynb) |
 | 7 | Pertemuan 7 | Pengantar Machine Learning: Regresi Linear | [Buka Notebook](Pertemuan7_NazarulBagusRiyadi_240401010229.ipynb) |
+| 8 | Pertemuan 9 | Algoritma Klasifikasi (Bagian 1): Logistic Regression, Decision Tree, Confusion Matrix, Accuracy, Precision, Recall, F1-Score | [Buka Notebook](Pertemuan9_NazarulBagusRiyadi_240401010229.ipynb) |
 
 ---
 
@@ -43,6 +44,7 @@ Di dalam repository ini terdapat 7 notebook hands-on yang mencakup: pengenalan P
 | Dataset housing (data kotor) | Pertemuan 3 | [data-science-source](https://github.com/arulriyadi/data-science-source) |
 | Titanic, Iris, Tips | P2, P4, P5, P6 | Seaborn / URL publik (di dalam notebook) |
 | Dataset sintetis gaji | Pertemuan 7 | Digenerate di notebook |
+| Breast Cancer Wisconsin | Pertemuan 9 | `sklearn.datasets.load_breast_cancer()` |
 
 ---
 
@@ -80,9 +82,9 @@ jupyter notebook
 
 ---
 
-## Kesimpulan Perjalanan Belajar (Pertemuan 1–7)
+## Kesimpulan Perjalanan Belajar (Pertemuan 1–9)
 
-Sepanjang 7 pertemuan, saya mempelajari alur kerja Data Science secara bertahap:
+Sepanjang pertemuan ini, saya mempelajari alur kerja Data Science secara bertahap:
 
 1. **Pertemuan 1–2** — Fondasi Python, Pandas, dan NumPy untuk membaca serta mengeksplorasi data tabular (dataset Titanic).
 2. **Pertemuan 3** — Data cleaning end-to-end: menghapus duplikat, imputasi missing values, menangani outlier dengan IQR, dan ekstraksi data dari REST API.
@@ -90,10 +92,11 @@ Sepanjang 7 pertemuan, saya mempelajari alur kerja Data Science secara bertahap:
 4. **Pertemuan 5** — Visualisasi data dengan dashboard 6 grafik pada dataset Tips, menggunakan framework What–So what–Now what.
 5. **Pertemuan 6** — Preprocessing untuk ML: imputasi, encoding, stratified split, dan feature scaling tanpa data leakage.
 6. **Pertemuan 7** — Membangun dan mengevaluasi model Regresi Linear (MAE, RMSE, R²) dengan visualisasi residual.
+7. **Pertemuan 9** — Klasifikasi biner pada Breast Cancer Wisconsin: membandingkan Logistic Regression dan Decision Tree memakai Confusion Matrix, Accuracy, Precision, Recall, dan F1-Score. Recall kelas ganas diprioritaskan karena False Negative berarti kanker terlewat.
 
-**Temuan utama:** Data Science bukan sekadar menjalankan kode — setiap tahap (eksplorasi → cleaning → analisis → visualisasi → modeling) saling terkait dan urutannya penting. Dokumentasi di notebook sama pentingnya dengan kode itu sendiri.
+**Temuan utama:** Data Science bukan sekadar menjalankan kode — setiap tahap (eksplorasi → cleaning → analisis → visualisasi → modeling) saling terkait dan urutannya penting. Metrik evaluasi juga harus dipilih sesuai konteks: Accuracy cukup untuk kelas seimbang, tetapi diagnosis medis membutuhkan Recall.
 
-**Keterbatasan & langkah selanjutnya:** Portofolio ini masih berbasis dataset contoh dan model sederhana. Ke depan saya ingin mengeksplorasi model klasifikasi, feature engineering lebih dalam, dan proyek dengan dataset riil.
+**Keterbatasan & langkah selanjutnya:** Model masih tunggal dan dataset masih contoh. Pertemuan 10–13 akan menambah ensemble (Random Forest), penanganan data imbalanced, clustering, asosiasi/rekomendasi, serta dasar deep learning dan NLP.
 
 ---
 
