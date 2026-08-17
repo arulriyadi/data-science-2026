@@ -14,11 +14,11 @@
 
 ## Perkenalan
 
-Saya Nazarul Bagus Riyadi, mahasiswa PJJ Informatika angkatan 2024. Repository ini merupakan portofolio hasil praktikum **Pengantar Data Science** (kode: 200302305) yang mendokumentasikan perjalanan belajar saya dari Pertemuan 1 hingga Pertemuan 9.
+Saya Nazarul Bagus Riyadi, mahasiswa PJJ Informatika angkatan 2024. Repository ini merupakan portofolio hasil praktikum **Pengantar Data Science** (kode: 200302305) yang mendokumentasikan perjalanan belajar saya dari Pertemuan 1 hingga Pertemuan 10.
 
 Tujuan belajar Data Science bagi saya adalah memahami alur kerja seorang data practitioner — mulai dari eksplorasi data, pembersihan, analisis statistik, visualisasi, persiapan data untuk machine learning, hingga membangun model prediksi (regresi dan klasifikasi). Setiap notebook merekam proses berpikir, kode, output, dan refleksi pembelajaran.
 
-Di dalam repository ini terdapat 8 notebook hands-on yang mencakup: pengenalan Python untuk data science, manipulasi data dengan Pandas & NumPy, data cleaning, statistika deskriptif, visualisasi, preprocessing ML, regresi linear, dan klasifikasi. Dataset pendukung (misalnya `housing_dirty.csv` untuk Pertemuan 3) tersedia di repository terpisah: [data-science-source](https://github.com/arulriyadi/data-science-source).
+Di dalam repository ini terdapat 9 notebook hands-on yang mencakup: pengenalan Python untuk data science, manipulasi data dengan Pandas & NumPy, data cleaning, statistika deskriptif, visualisasi, preprocessing ML, regresi linear, klasifikasi dasar, serta ensemble dan data imbalanced. Dataset pendukung (misalnya `housing_dirty.csv` untuk Pertemuan 3) tersedia di repository terpisah: [data-science-source](https://github.com/arulriyadi/data-science-source).
 
 ---
 
@@ -34,6 +34,7 @@ Di dalam repository ini terdapat 8 notebook hands-on yang mencakup: pengenalan P
 | 6 | Pertemuan 6 | Persiapan Data (Preprocessing ML) | [Buka Notebook](Pertemuan6_NazarulBagusRiyadi_240401010229.ipynb) |
 | 7 | Pertemuan 7 | Pengantar Machine Learning: Regresi Linear | [Buka Notebook](Pertemuan7_NazarulBagusRiyadi_240401010229.ipynb) |
 | 8 | Pertemuan 9 | Algoritma Klasifikasi (Bagian 1): Logistic Regression, Decision Tree, Confusion Matrix, Accuracy, Precision, Recall, F1-Score | [Buka Notebook](Pertemuan9_NazarulBagusRiyadi_240401010229.ipynb) |
+| 9 | Pertemuan 10 | Algoritma Klasifikasi (Bagian 2): Random Forest, Imbalanced Dataset, Customer Churn | [Buka Notebook](Pertemuan10_NazarulBagusRiyadi_240401010229.ipynb) |
 
 ---
 
@@ -45,6 +46,7 @@ Di dalam repository ini terdapat 8 notebook hands-on yang mencakup: pengenalan P
 | Titanic, Iris, Tips | P2, P4, P5, P6 | Seaborn / URL publik (di dalam notebook) |
 | Dataset sintetis gaji | Pertemuan 7 | Digenerate di notebook |
 | Breast Cancer Wisconsin | Pertemuan 9 | `sklearn.datasets.load_breast_cancer()` |
+| Telco Customer Churn | Pertemuan 10 | URL publik IBM (di dalam notebook) |
 
 ---
 
@@ -82,7 +84,7 @@ jupyter notebook
 
 ---
 
-## Kesimpulan Perjalanan Belajar (Pertemuan 1–9)
+## Kesimpulan Perjalanan Belajar (Pertemuan 1–10)
 
 Sepanjang pertemuan ini, saya mempelajari alur kerja Data Science secara bertahap:
 
@@ -93,10 +95,11 @@ Sepanjang pertemuan ini, saya mempelajari alur kerja Data Science secara bertaha
 5. **Pertemuan 6** — Preprocessing untuk ML: imputasi, encoding, stratified split, dan feature scaling tanpa data leakage.
 6. **Pertemuan 7** — Membangun dan mengevaluasi model Regresi Linear (MAE, RMSE, R²) dengan visualisasi residual.
 7. **Pertemuan 9** — Klasifikasi biner pada Breast Cancer Wisconsin: membandingkan Logistic Regression dan Decision Tree memakai Confusion Matrix, Accuracy, Precision, Recall, dan F1-Score. Recall kelas ganas diprioritaskan karena False Negative berarti kanker terlewat.
+8. **Pertemuan 10** — Random Forest pada Telco Customer Churn (26.5% churn). Accuracy paradox: di threshold 0.5 kedua model ~0.79 Accuracy, tetapi Recall churn baru naik ke 0.671 setelah threshold diturunkan ke 0.35.
 
-**Temuan utama:** Data Science bukan sekadar menjalankan kode — setiap tahap (eksplorasi → cleaning → analisis → visualisasi → modeling) saling terkait dan urutannya penting. Metrik evaluasi juga harus dipilih sesuai konteks: Accuracy cukup untuk kelas seimbang, tetapi diagnosis medis membutuhkan Recall.
+**Temuan utama:** Data Science bukan sekadar menjalankan kode — setiap tahap (eksplorasi → cleaning → analisis → visualisasi → modeling) saling terkait dan urutannya penting. Metrik evaluasi harus dipilih sesuai konteks: Recall untuk diagnosis medis, Recall/F1 kelas minoritas untuk churn — Accuracy saja bisa menyesatkan.
 
-**Keterbatasan & langkah selanjutnya:** Model masih tunggal dan dataset masih contoh. Pertemuan 10–13 akan menambah ensemble (Random Forest), penanganan data imbalanced, clustering, asosiasi/rekomendasi, serta dasar deep learning dan NLP.
+**Keterbatasan & langkah selanjutnya:** Dataset masih contoh publik. Pertemuan 11–13 akan menambah clustering, asosiasi/rekomendasi, serta dasar deep learning dan NLP.
 
 ---
 
